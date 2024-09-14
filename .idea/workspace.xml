@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="797c8105-112c-4e8e-b2d6-e27708c80827" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GraficasPastelBarras.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chart/BarChart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Chart/PieChart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CustomTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
+    <list default="true" id="797c8105-112c-4e8e-b2d6-e27708c80827" name="Changes" comment="Grafica de barras terminada">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chart/PieChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chart/PieChart.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,11 +65,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726322494450</updated>
-      <workItem from="1726322495581" duration="14653000" />
+      <workItem from="1726322495581" duration="16291000" />
     </task>
+    <task id="LOCAL-00001" summary="Grafica de barras terminada">
+      <option name="closed" value="true" />
+      <created>1726338688950</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726338688950</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Grafica de barras terminada" />
+    <option name="LAST_COMMIT_MESSAGE" value="Grafica de barras terminada" />
   </component>
 </project>
