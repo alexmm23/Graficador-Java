@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="797c8105-112c-4e8e-b2d6-e27708c80827" name="Changes" comment="Teriminar grafica de barras">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Utils/Background.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/botaoro.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/futbol.jpg" afterDir="false" />
+    <list default="true" id="797c8105-112c-4e8e-b2d6-e27708c80827" name="Changes" comment="Limitar filas y agregar fondo al frame principal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Chart/BarChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chart/BarChart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Chart/PieChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chart/PieChart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CustomTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/CustomTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726322494450</updated>
-      <workItem from="1726322495581" duration="19053000" />
+      <workItem from="1726322495581" duration="21208000" />
     </task>
     <task id="LOCAL-00001" summary="Grafica de barras terminada">
       <option name="closed" value="true" />
@@ -97,7 +91,31 @@
       <option name="project" value="LOCAL" />
       <updated>1726343438450</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Agregar panel de fondo">
+      <option name="closed" value="true" />
+      <created>1726346157382</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726346157382</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Correccion de errores">
+      <option name="closed" value="true" />
+      <created>1726346216206</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726346216206</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Limitar filas y agregar fondo al frame principal">
+      <option name="closed" value="true" />
+      <created>1726346518603</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726346518603</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +124,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Grafica de barras terminada" />
     <MESSAGE value="Teriminar grafica de barras" />
-    <option name="LAST_COMMIT_MESSAGE" value="Teriminar grafica de barras" />
+    <MESSAGE value="Agregar panel de fondo" />
+    <MESSAGE value="Correccion de errores" />
+    <MESSAGE value="Limitar filas y agregar fondo al frame principal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Limitar filas y agregar fondo al frame principal" />
   </component>
 </project>

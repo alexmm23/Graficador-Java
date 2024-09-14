@@ -34,14 +34,19 @@ public class PieChart extends JPanel {
                 total += Integer.parseInt(row[i].toString());
             }
         }
-
         // Dibujar las secciones con degradado
         int currentAngle = 0;
         int currentIndex = 0;
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
                 System.out.println(data[i][j]);
-                int value = Integer.parseInt(data[i][j].toString());
+                int value = 0;
+                try {
+                    value = Integer.parseInt(data[i][j].toString());
+                } catch (NumberFormatException e) {
+                    JOptionPane.showMessageDialog(null, "Por favor, ingrese solo números enteros", "Error", JOptionPane.ERROR_MESSAGE);
+                    return;
+                }
                 int angle = (int) Math.round(((double) value / total) * 360);
 
                 // Crear un degradado para cada rebanada

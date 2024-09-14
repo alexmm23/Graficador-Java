@@ -23,20 +23,17 @@ public class BarChart extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
         Graphics2D g2d = (Graphics2D) g;
-        int width = getWidth() - 50;
+        int width = getWidth() - 100;
         int height = getHeight();
         int numBars = getDataSize();
         int barWidth = width / numBars;
         int max = getMaxValue();
         int barIndex = 0;
-        g2d.drawLine(25, 50, 25, height - 50);
+        g2d.drawLine(50, 50, 50, height - 40);
         g2d.drawString("0", 5, height - 50);
         g2d.drawString(String.valueOf(max), 5, 50);
-        //hacer un string que diga goles y otro que diga jugadores y rotarlo en vertical
-        g2d.rotate(-Math.PI / 2);
-        g2d.drawString("Goles", 5, 30);
-        g2d.rotate(Math.PI / 2);
-        g2d.drawLine(25, height - 50, width, height - 50);
+        g2d.drawString("Goles", 5, 300);
+        g2d.drawLine(50, height - 40, width + 100, height - 40);
         g2d.drawString("0", 25, height - 35);
 
         for (int i = 0; i < data.length; i++) {
@@ -73,14 +70,14 @@ public class BarChart extends JPanel {
         if (index % 2 == 0) {
             g2d.setColor(Color.LIGHT_GRAY);
             g2d.fillRect(0, 0, 10, 10);
-            g2d.setColor(Color.WHITE);
-            g2d.drawLine(0, 0, 10, 10);
-            g2d.drawLine(0, 10, 10, 0);
+            g2d.setColor(Color.GREEN);
+            g2d.drawOval(2, 2, 6, 6);
         } else {
-            g2d.setColor(Color.GRAY);
+            //textura de lineas diagonales
+            g2d.setColor(Color.LIGHT_GRAY);
             g2d.fillRect(0, 0, 10, 10);
-            g2d.setColor(Color.WHITE);
-            g2d.fillOval(2, 2, 6, 6);
+            g2d.setColor(Color.GREEN);
+            g2d.drawLine(0, 0, 10, 10);
         }
         return new TexturePaint(bufferedImage, new Rectangle(10, 10));
     }
