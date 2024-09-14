@@ -38,7 +38,6 @@ public class BarChart extends JPanel {
         g2d.rotate(Math.PI / 2);
         g2d.drawLine(25, height - 50, width, height - 50);
         g2d.drawString("0", 25, height - 35);
-        g2d.drawString("Datos", width - 50, height - 35);
 
         for (int i = 0; i < data.length; i++) {
             if (max == 0) {
@@ -61,7 +60,7 @@ public class BarChart extends JPanel {
                 g2d.drawRect(x, y, barWidth - 2, barHeight);
                 g2d.setColor(Color.BLACK);
                 g2d.drawString(String.valueOf(value), x, y);
-                g2d.drawString(String.valueOf(headers[i]), x, height - 10);
+                g2d.drawString(String.valueOf(headers[j]), x, height - 10);
                 barIndex++;
             }
         }
