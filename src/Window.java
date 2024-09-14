@@ -1,5 +1,7 @@
 import Chart.BarChart;
 import Chart.PieChart;
+import Utils.Background;
+import Utils.CustomTable;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
@@ -14,57 +16,59 @@ public class Window extends JFrame {
     private JPanel namePanel, sizePanel, headerPanel;
     private int columns;
 
+
     public Window() {
-        setTitle("Hello world!");
-        setSize(800, 800);
+        setTitle("Maximos goleadores del futbol");
+        setSize(1200, 800);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLayout(new BorderLayout());
+        String path = "src/images/futbol.jpg";
+        Background backgroundPanel = new Background(path);
+        setContentPane(backgroundPanel);
         headerPanel = new JPanel();
         JButton btnGraph = new JButton("Graficar");
+        JLabel title = new JLabel("Maximos goleadores del futbol");
+        title.setFont(new Font("Arial", Font.BOLD, 20));
+        headerPanel.add(title);
+        //añadir salto de linea
+        headerPanel.add(Box.createRigidArea(new Dimension(0, 20)));
         headerPanel.add(btnGraph);
         btnGraph.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 Object[][] data = table.getData();
                 Object headers[] = table.getHeaders();
-                System.out.println("Headers: ");
-                for (Object header : headers) {
-                    System.out.print(header + " ");
+                if (headers == null || data == null || data.length == 0 || headers.length == 0) {
+                    JOptionPane.showMessageDialog(backgroundPanel, "Por favor, ingrese nombres para las columnas");
+                    return;
                 }
-                System.out.println();
-                for (Object[] row : data) {
-                    for (Object cell : row) {
-                        System.out.print(cell + " ");
-                    }
-                    System.out.println();
-                }
-                String type = JOptionPane.showInputDialog("¿Qué tipo de gráfico desea? (barras, pastel, lineas)");
+                int selectedOption = JOptionPane.showOptionDialog(backgroundPanel, "Escoge un tipo de grafica", "Tipo de grafica",
+                        JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE, null, new String[]{"Pastel", "Barras"}, 0);
+                String type = (selectedOption == 0) ? "pastel" : "barras";
                 drawGraph(data, headers, type);
             }
         });
-        //alinear boton a la parte superior derecha
         headerPanel.setLayout(new FlowLayout(FlowLayout.RIGHT));
-        add(headerPanel, BorderLayout.NORTH);
+        backgroundPanel.add(headerPanel, BorderLayout.NORTH);  // Agregar el panel sobre el fondo
 
-        table = new CustomTable(5, 5);
+        table = new CustomTable(1, 5);
         JScrollPane scrollPane = new JScrollPane(table);
-        add(scrollPane, BorderLayout.CENTER);
+        backgroundPanel.add(scrollPane, BorderLayout.CENTER);
 
         JPanel controlPanel = new JPanel();
         controlPanel.setLayout(new GridLayout(3, 1));
         sizePanel = new JPanel();
-        sizePanel.add(new JLabel("Filas: "));
-        txtRows = new JTextField(5);
-        sizePanel.add(txtRows);
+        // De momento solo habra un numero limitado de filas
+        //sizePanel.add(new JLabel("Filas: "));
+        //txtRows = new JTextField(5);
+        //sizePanel.add(txtRows);
         sizePanel.add(new JLabel("Columnas: "));
         txtCols = new JTextField(5);
         sizePanel.add(txtCols);
         JButton btnChangeSize = new JButton("Cambiar tamaño");
-        btnChangeSize.addActionListener(e -> {
-            changeTableSize();
-        });
+        btnChangeSize.addActionListener(e -> changeTableSize());
         sizePanel.add(btnChangeSize);
         controlPanel.add(sizePanel);
+
         namePanel = new JPanel();
         columns = 5;
         txtHeaders = new JTextField[columns];
@@ -82,13 +86,16 @@ public class Window extends JFrame {
         });
         namePanel.add(btnChangeNames);
         controlPanel.add(namePanel);
-        add(controlPanel, BorderLayout.SOUTH);
+        backgroundPanel.add(controlPanel, BorderLayout.SOUTH);  // Agregar el panel de control
+
         setVisible(true);
     }
 
     private void changeTableSize() {
         try {
-            int rows = Integer.parseInt(txtRows.getText());
+            // De momento solo habra un numero limitado de filas
+            //int rows = Integer.parseInt(txtRows.getText());
+            int rows = 1;
             int cols = Integer.parseInt(txtCols.getText());
             columns = cols;
             if (columns > 5) {

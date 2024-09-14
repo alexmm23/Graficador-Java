@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="797c8105-112c-4e8e-b2d6-e27708c80827" name="Changes" comment="Grafica de barras terminada">
+    <list default="true" id="797c8105-112c-4e8e-b2d6-e27708c80827" name="Changes" comment="Teriminar grafica de barras">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Utils/Background.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/botaoro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/futbol.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Chart/BarChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chart/BarChart.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Chart/PieChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chart/PieChart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CustomTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/CustomTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +47,10 @@
     "Application.Window.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Usuario/IdeaProjects/GraficasPastelBarras/src/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -50,6 +59,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\IdeaProjects\GraficasPastelBarras\src\images" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -65,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1726322494450</updated>
-      <workItem from="1726322495581" duration="16291000" />
+      <workItem from="1726322495581" duration="19053000" />
     </task>
     <task id="LOCAL-00001" summary="Grafica de barras terminada">
       <option name="closed" value="true" />
@@ -75,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726338688950</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Teriminar grafica de barras">
+      <option name="closed" value="true" />
+      <created>1726343438450</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726343438450</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,6 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Grafica de barras terminada" />
-    <option name="LAST_COMMIT_MESSAGE" value="Grafica de barras terminada" />
+    <MESSAGE value="Teriminar grafica de barras" />
+    <option name="LAST_COMMIT_MESSAGE" value="Teriminar grafica de barras" />
   </component>
 </project>
